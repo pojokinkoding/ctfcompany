@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Instagram } from 'lucide-react';
-import { useEffect } from 'react';
+import { Instagram, Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -13,6 +13,8 @@ function ScrollToTop() {
 }
 
 export default function Layout() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       <ScrollToTop />
@@ -45,7 +47,26 @@ export default function Layout() {
             <Link to="/product" className="hover:opacity-75 transition-opacity">Our Product</Link>
             <a href="https://api.whatsapp.com/send/?phone=6287785737638&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">Contact Us</a>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="lg:hidden text-brand-green p-2 z-50"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
+          </button>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-md border-t border-gray-100 flex flex-col items-center py-6 gap-6 text-[18px] font-semibold text-brand-green tracking-wide">
+            <Link to="/" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            <Link to="/about" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+            <Link to="/product" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Our Product</Link>
+            <a href="https://api.whatsapp.com/send/?phone=6287785737638&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a>
+          </div>
+        )}
       </nav>
 
       <Outlet />
