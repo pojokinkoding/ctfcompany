@@ -3,25 +3,25 @@ import { motion } from 'motion/react';
 export default function AboutUs() {
   return (
     <main className="pt-[150px] pb-24 font-sans text-brand-green">
-      
+
       {/* 1. ABOUT US Header & Banner */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-20">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="font-display font-normal text-brand-green text-6xl md:text-7xl lg:text-[5.5rem] uppercase mb-8 tracking-tight"
         >
           ABOUT US
         </motion.h1>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="w-full rounded-2xl overflow-hidden aspect-[21/9] shadow-lg mb-24"
+          className="w-full rounded-2xl overflow-hidden aspect-[3/1] shadow-lg mb-24"
         >
-          <img 
-            src="https://picsum.photos/seed/coffee-greenhouse-banner/1600/700" 
+          <img
+            src={`${import.meta.env.BASE_URL}aboutus1.png`}
             alt="Coffee drying facility"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -40,26 +40,26 @@ export default function AboutUs() {
             </h2>
             <div className="space-y-12 text-[17px] md:text-[19px] text-brand-green/90 leading-relaxed font-medium">
               <p>
-                Coffee Trade Factory was born from a simple yet profound 
-                belief: that coffee is more than a commodity it is a 
+                Coffee Trade Factory was born from a simple yet profound
+                belief: that coffee is more than a commodity it is a
                 language of connection.
               </p>
               <p>
-                Driven by our passion for coffee & commitment to 
-                excellence. We believe that great coffee has the power to 
+                Driven by our passion for coffee & commitment to
+                excellence. We believe that great coffee has the power to
                 bring people together and enrich lives.
               </p>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden shadow-lg aspect-[16/10]"
           >
-            <img 
-              src="https://picsum.photos/seed/coffee-greenhouse-sm/900/600" 
+            <img
+              src={`${import.meta.env.BASE_URL}aboutus2.png`}
               alt="Coffee drying beds"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -77,14 +77,14 @@ export default function AboutUs() {
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden shadow-lg aspect-[16/11] order-2 lg:order-1"
           >
-            <img 
-              src="https://picsum.photos/seed/coffee-greenhouse-side/900/650" 
+            <img
+              src={`${import.meta.env.BASE_URL}aboutus3.png`}
               alt="Coffee greenhouse wide"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -95,13 +95,13 @@ export default function AboutUs() {
               OUR PORTFOLIO
             </h2>
             <p className="text-[16px] md:text-[18px] text-brand-green/90 leading-relaxed font-medium mb-12">
-              We continue to expand our footprint across the world bridging 
-              the gap between Indonesian heritage and global demand. 
-              Highlighting our ability to properly source, process, & export 
-              top-tier beans. We ensure that every partnership contributes to 
+              We continue to expand our footprint across the world bridging
+              the gap between Indonesian heritage and global demand.
+              Highlighting our ability to properly source, process, & export
+              top-tier beans. We ensure that every partnership contributes to
               a more sustainable & flavorful global coffee industry.
             </p>
-            
+
             {/* Flags */}
             <div className="flex flex-wrap gap-x-10 gap-y-6 items-center">
               <div className="flex items-center gap-4">
@@ -131,17 +131,17 @@ export default function AboutUs() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h3 className="font-sans font-bold text-brand-green text-3xl md:text-4xl mb-6">Vision</h3>
             <p className="text-[17px] md:text-[19px] text-brand-green/90 leading-relaxed font-medium">
-              We hope to gain recognition as the most trusted partner in 
-              bridging between the world's palates with the flavors of 
-              the Indonesian archipelago becoming the gold standard of 
+              We hope to gain recognition as the most trusted partner in
+              bridging between the world's palates with the flavors of
+              the Indonesian archipelago becoming the gold standard of
               the industry.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
             <h3 className="font-sans font-bold text-brand-green text-3xl md:text-4xl mb-6">Mission</h3>
             <p className="text-[17px] md:text-[19px] text-brand-green/90 leading-relaxed font-medium">
-              To showcase the rich diversity of Indonesian coffee & foster prosperity 
-              for the farmers responsible behind such high-quality craftmanship. By 
+              To showcase the rich diversity of Indonesian coffee & foster prosperity
+              for the farmers responsible behind such high-quality craftmanship. By
               bringing their stories to the global stage & while maintaining a "Bean-
               to-Shipment" standard of perfection.
             </p>
@@ -151,10 +151,10 @@ export default function AboutUs() {
         {/* Two Images */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           <motion.div initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="rounded-2xl overflow-hidden aspect-[4/3]">
-            <img src="https://picsum.photos/seed/coffee-cherries-pile/800/600" alt="Coffee cherries" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src={`${import.meta.env.BASE_URL}aboutus4.png`} alt="Coffee cherries" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="rounded-2xl overflow-hidden aspect-[4/3]">
-            <img src="https://picsum.photos/seed/lake-boat-id/800/600" alt="Lake in Indonesia" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src={`${import.meta.env.BASE_URL}aboutus5.png`} alt="Lake in Indonesia" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </motion.div>
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function AboutUs() {
             STRATEGIC GOAL
           </h2>
           <p className="text-[17px] md:text-[19px] text-brand-green/90 leading-relaxed max-w-3xl font-medium">
-            We focus on bringing the taste of Indonesian coffee culture to the global coffee market & vice 
+            We focus on bringing the taste of Indonesian coffee culture to the global coffee market & vice
             versa through connections, sustainability, innovation & rigorous quality control.
           </p>
         </motion.div>
@@ -175,32 +175,32 @@ export default function AboutUs() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h3 className="font-sans font-bold text-brand-green text-2xl md:text-3xl mb-4">Global Expansion</h3>
             <p className="text-[17px] md:text-[18px] text-brand-green/90 leading-relaxed">
-              Establishing a robust distribution network across the 
-              global landscape to make Indonesian coffee a staple in 
+              Establishing a robust distribution network across the
+              global landscape to make Indonesian coffee a staple in
               specialty roasteries worldwide.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
             <h3 className="font-sans font-bold text-brand-green text-2xl md:text-3xl mb-4">Sustainable Sourcing</h3>
             <p className="text-[17px] md:text-[18px] text-brand-green/90 leading-relaxed">
-              Implementing fully verifiable supply chains that 
-              prioritize environmental stewardship & ethical labor 
+              Implementing fully verifiable supply chains that
+              prioritize environmental stewardship & ethical labor
               practices in their farms.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h3 className="font-sans font-bold text-brand-green text-2xl md:text-3xl mb-4">Quality Innovation</h3>
             <p className="text-[17px] md:text-[18px] text-brand-green/90 leading-relaxed">
-              Utilizing state-of-the-art processing 
-              technology to preserve the delicate flavor 
+              Utilizing state-of-the-art processing
+              technology to preserve the delicate flavor
               profiles unique to Indonesian volcanic soil.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
             <h3 className="font-sans font-bold text-brand-green text-2xl md:text-3xl mb-4">Cultural Exchange</h3>
             <p className="text-[17px] md:text-[18px] text-brand-green/90 leading-relaxed">
-              Enriching the local market with international trends, tastes 
-              & techniques. While introducing the global scene to 
+              Enriching the local market with international trends, tastes
+              & techniques. While introducing the global scene to
               Indonesia's exotics coffee flavors.
             </p>
           </motion.div>
@@ -212,8 +212,8 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="w-full rounded-2xl overflow-hidden aspect-[21/9] shadow-lg"
         >
-          <img 
-            src="https://picsum.photos/seed/coffee-green-beans-branch/1600/700" 
+          <img
+            src={`${import.meta.env.BASE_URL}aboutus6.png`}
             alt="Coffee branch with green cherries"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -230,14 +230,14 @@ export default function AboutUs() {
             viewport={{ once: true }}
             className="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg aspect-[4/5]"
           >
-            <img 
-              src="https://picsum.photos/seed/johan-kwe-portrait/800/1000" 
+            <img
+              src={`${import.meta.env.BASE_URL}aboutus7.png`}
               alt="Johan Kwe"
               className="w-full h-full object-cover object-top"
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -249,21 +249,21 @@ export default function AboutUs() {
             </h2>
             <div className="space-y-6 text-[15px] md:text-[16px] text-brand-green/90 leading-[1.7] font-medium">
               <p>
-                <strong>Johan Kwe (陈光宗)</strong> is a coffee producer, educator & post-harvest specialist from Sumatra, 
-                Indonesia. With over 10 years of experience in specialty coffee. A CQI-Texas A&M certified 
-                Q Processing Expert, as well as a Q Processing & Q Arabica Grader Instructor & Q Robusta 
+                <strong>Johan Kwe (陈光宗)</strong> is a coffee producer, educator & post-harvest specialist from Sumatra,
+                Indonesia. With over 10 years of experience in specialty coffee. A CQI-Texas A&M certified
+                Q Processing Expert, as well as a Q Processing & Q Arabica Grader Instructor & Q Robusta
                 Grader.
               </p>
               <p>
-                Currently serving as Director at Simalem Specialty Coffee & Greenlot Coffee. Mr. Kwe 
-                supports us by focusing on post-harvest improvements, export development & 
-                connecting producers with the global market while also making coffee education more 
+                Currently serving as Director at Simalem Specialty Coffee & Greenlot Coffee. Mr. Kwe
+                supports us by focusing on post-harvest improvements, export development &
+                connecting producers with the global market while also making coffee education more
                 accessible.
               </p>
               <p>
-                Mr. Kwe has led CQI courses across Brazil, Thailand, Indonesia, China, PNG, Nepal, Timor 
-                Leste, Laos, the Philippines & Russia. Collaborating with organizations like FairTrade ANZ, 
-                ITC & ACDI/VOCA. As well also having contributed to SCA's The Value of Specialty Coffee 
+                Mr. Kwe has led CQI courses across Brazil, Thailand, Indonesia, China, PNG, Nepal, Timor
+                Leste, Laos, the Philippines & Russia. Collaborating with organizations like FairTrade ANZ,
+                ITC & ACDI/VOCA. As well also having contributed to SCA's The Value of Specialty Coffee
                 Cuppers & helped develop CQI's Q Processing Professional Robusta program.
               </p>
             </div>
@@ -275,15 +275,15 @@ export default function AboutUs() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
             <div className="lg:col-span-4">
               <h2 className="font-display font-normal text-brand-green text-4xl lg:text-5xl uppercase tracking-tight leading-[0.95]">
-                WHY PARTNER <br/> WITH US
+                WHY PARTNER <br /> WITH US
               </h2>
             </div>
             <div className="lg:col-span-8 flex items-center">
               <p className="font-sans font-bold text-brand-green/90 text-xl md:text-2xl lg:text-[1.75rem] leading-[1.5]">
-                In the crowded global market, Coffee Trade Factory has the 
-                homefield advantage as we understand the nuances of 
-                navigating through the local coffee landscape. We are the 
-                bridge that brings the best of Indonesia to the world & the 
+                In the crowded global market, Coffee Trade Factory has the
+                homefield advantage as we understand the nuances of
+                navigating through the local coffee landscape. We are the
+                bridge that brings the best of Indonesia to the world & the
                 best of the world to Indonesia.
               </p>
             </div>
@@ -292,15 +292,15 @@ export default function AboutUs() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
             <div className="lg:col-span-4">
               <h2 className="font-display font-normal text-brand-green text-4xl lg:text-5xl uppercase tracking-tight leading-[0.95]">
-                ARTISANS OF <br/> THE TRADE
+                ARTISANS OF <br /> THE TRADE
               </h2>
             </div>
             <div className="lg:col-span-8 flex items-center">
               <p className="font-sans font-bold text-brand-green/90 text-xl md:text-2xl lg:text-[1.75rem] leading-[1.5]">
-                Behind every bean is a dedicated collective of industry 
-                experts, master cuppers & logistics specialists. At Coffee 
-                Trade Factory, our team combines decades of local 
-                agricultural knowledge with a deep understanding of the 
+                Behind every bean is a dedicated collective of industry
+                experts, master cuppers & logistics specialists. At Coffee
+                Trade Factory, our team combines decades of local
+                agricultural knowledge with a deep understanding of the
                 global market trends.
               </p>
             </div>
@@ -310,7 +310,7 @@ export default function AboutUs() {
 
       {/* 5. OUR Q GRADER TEAM */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mt-32">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -327,7 +327,7 @@ export default function AboutUs() {
             "INDRA WIRAWAN",
             "ALFRED"
           ].map((name, i) => (
-            <motion.div 
+            <motion.div
               key={name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
