@@ -7,35 +7,35 @@ const regions = [
     title: "CENTRAL\nJAVA",
     description: "The Cultural Heart of Indonesia home to majestic temples & scenic mountains.",
     image: `${import.meta.env.BASE_URL}product2.png`, // Placeholder for batik/textile pattern
-    link: "#"
+    link: "/product/central-java"
   },
   {
     name: "SUMATERA",
     title: "SUMATERA",
     description: "A diverse land full of ancient rainforests, wild volcanic landscapes & rich wildlife.",
     image: `${import.meta.env.BASE_URL}product3.png`,
-    link: "#"
+    link: "/product/sumatera"
   },
   {
     name: "NORTH SUMATERA",
     title: "NORTH\nSUMATERA",
     description: "Home to the world famous Lake Toba surrounded by lush highlands.",
     image: `${import.meta.env.BASE_URL}product4.png`,
-    link: "#"
+    link: "/product/north-sumatera"
   },
   {
     name: "SULAWESI",
     title: "SULAWESI",
     description: "Striking landscapes surrounded by pristine seas inhabited by rare flora & fauna.",
     image: `${import.meta.env.BASE_URL}product5.png`,
-    link: "#"
+    link: "/product/sulawesi"
   },
   {
     name: "BALI",
     title: "BALI",
     description: "The tropical hotspot island known comprised of captivating beaches & lush rice terraces.",
     image: `${import.meta.env.BASE_URL}product6.png`,
-    link: "#"
+    link: "/product/bali"
   }
 ];
 

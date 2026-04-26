@@ -45,7 +45,7 @@ export default function Layout() {
             <Link to="/" className="hover:opacity-75 transition-opacity">Home</Link>
             <Link to="/about" className="hover:opacity-75 transition-opacity">About Us</Link>
             <Link to="/product" className="hover:opacity-75 transition-opacity">Our Product</Link>
-            <a href="https://api.whatsapp.com/send/?phone=6287785737638&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">Contact Us</a>
+            <Link to="/contact" className="hover:opacity-75 transition-opacity">Contact Us</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -64,7 +64,7 @@ export default function Layout() {
             <Link to="/" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <Link to="/about" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
             <Link to="/product" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Our Product</Link>
-            <a href="https://api.whatsapp.com/send/?phone=6287785737638&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a>
+            <Link to="/contact" className="hover:opacity-75 transition-opacity" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
           </div>
         )}
       </nav>
@@ -124,7 +124,7 @@ export default function Layout() {
                   <div className="text-sm md:text-base xl:text-lg text-white/90 leading-[1.6] font-sans font-normal space-y-1">
                     <p>Blessindo Industrial Estate, Blok F no 67</p>
                     <p>Jl. Raya H. Tabri, Bojongkamal, Kec. Legok, Kabupaten Tangerang,</p>
-                    <p>Banten 15820, Indonesia.</p>
+                    <p>Banten 15820, Indonesia</p>
                   </div>
                 </div>
               </div>
